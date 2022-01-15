@@ -14,9 +14,14 @@ body {
 main {
 	align-items: center;
 	display: flex;
+	flex-wrap: wrap;
 	height: 100vh;
 	justify-content: center;
 	position: relative;
+}
+
+section {
+	min-width: 33%;
 }
 
 main > section img {
@@ -25,7 +30,7 @@ main > section img {
 	width: 350px;
 }
 
-main > section button {
+main > button {
 	background-color: #00BFFF;
 	border: none;
 	border-radius: 4px; /*arredonda o botão */
@@ -39,9 +44,10 @@ main > section button {
 	text-transform: uppercase;
 }
 
-#details-container {
+.details-container {
 	font-weight: bold;
 	list-style-type: none;
+	font-size: 30px !important;
 	height: 30px;
 	width: 90%;
 }
